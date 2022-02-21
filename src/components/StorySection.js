@@ -35,15 +35,19 @@ height: 100vh;
 width: 95vw;
 @media screen and (max-width: 1440px) {
     width: 65vw;
-  height: 110vh;
+  height: 100vh;
 }
-@media screen and (max-width: 1024px) {
-    width: 90vw;
-  height: 110vh;
+@media screen and (max-width: 1439px) {
+    width: 95vw;
+  height: 115vh;
+}
+@media screen and (max-width: 1439px) {
+  width: 95vw;
+  height: 115vh;
 }
 @media screen and (max-width: 768px) {
-    width: 110vw;
-  height: 100vh;
+    width: 10vw;
+  height: 105vh;
 }
 @media screen and (max-width: 641px) {
     width: 130vw;
@@ -62,7 +66,7 @@ const Sender = styled(SiMinutemailer)`
 const ButtonSender = styled.button`
   cursor: pointer;
   position: absolute;
-  top: 505px;
+  top: 525px;
   left: 495px;
   background: transparent;
   border: none;
@@ -74,14 +78,27 @@ const Text = styled.div`
 
 const Video = styled.video`
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: 197px;
-  width: 350px;
-  height: 560px;
+  width: 330px;
+  height: 540px;
+  @media screen and (max-width: 1440px) {
+    top: 5px;
+  left: 250px;
+  width: 289px;
+  height: 610px;
+  }
+  @media screen and (max-width: 1024px) {
+    top: 5px;
+  left: 250px;
+  width: 289px;
+  height: 610px;
+  }
+}
 `
 const InputComent = styled.input`
   position: absolute;
-  top: 500px;
+  top: 520px;
   left: 275px;
   width: 220px;
   height: 35px;
