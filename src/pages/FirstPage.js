@@ -11,6 +11,8 @@ import { SliderData } from '../data/SliderData';
 import GlobalStyle from '../globalStyles';
 import Footer from '../components/Footer';
 import { FooterData } from '../data/FooterData';
+import FriendsSection from '../components/FriendsSection';
+import { FriendsData } from '../data/FriendsData';
 
 function FirstPage() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,6 +27,7 @@ function FirstPage() {
       <Hero slides={SliderData} />
       <InfoSection {...InfoData}/>
       <StorySection {...StoryData}/>
+      <FriendsSection photos={FriendsData}/>
       <Footer {...FooterData}/>
     </>
   );
