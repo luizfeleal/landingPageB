@@ -1,4 +1,6 @@
 import ImageOne from '../images/rockInRio.jpeg';
+import ImageTwo from '../images/imagemCasamento.JPG';
+import ImageThree from '../images/festaCorporativa.JPG';
 
 export const SliderData = [
     {
@@ -12,14 +14,14 @@ export const SliderData = [
         title: 'Casamento',
         path: '/casamento',
         label: 'View more',
-        image: ImageOne,
+        image: ImageTwo,
         alt: 'casamento'
     },
     {
-        title: 'Festa particular',
-        path: '/festaparticular',
+        title: 'Festa Corporativa',
+        path: '/festaCorporativa',
         label: 'View more',
-        image: ImageOne,
+        image: ImageThree,
         alt: 'Festa particular'
     },
 

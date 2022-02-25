@@ -1,4 +1,4 @@
-import ImageIphoneScreen from '../images/videoStory.mp4';
+import ImageIphoneScreen from '../images/videoCasamento.mov';
 import ImageIphoneScreenTwo from '../images/pngIphoneScreen.png';
 
 export const StoryData = {
