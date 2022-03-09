@@ -5,6 +5,7 @@ import FirstPage from './pages/FirstPage';
 import GlobalStyle from './globalStyles';
 import FestaCorporativa from './pages/FestaCorporativa';
 import RockInRio from './pages/RockInRio';
+import SambaDoMozi from './pages/SambaDoMozi';
 import Casamento from './pages/Casamento';
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
     <GlobalStyle />
           <Routes>
             <Route exact path='/' element={<FirstPage />}/>
-            <Route exact path='/festaCorporativa' element={<FestaCorporativa />}/>
-            <Route exact path='/rockInRio' element={<RockInRio />}/>
             <Route exact path='/casamento' element={<Casamento />}/>
+            <Route exact path='/rockInRio' element={<RockInRio />}/>
+            <Route exact path='/sambaDoMozi' element={<SambaDoMozi />}/>
           </Routes>
           
     </>
