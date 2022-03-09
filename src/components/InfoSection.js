@@ -15,6 +15,7 @@ grid-template-rows: 800px;
 
 @media screen and (max-width: 768px) {
     grid-template-columns: 1fr; 
+    justify-content: center;
 }
 `
 const ColumnLeft = styled.div`
@@ -58,17 +59,18 @@ img{
 @media screen and (max-width: 768px) {
     width: 90%;
     height: 90%;
+    display: none;
 }
 
 `
 function InfoSection({heading, paragraphOne, paragraphTwo, buttonLabel, reverse, image}) {
     return (
-        <Section>
+        <Section id='sobre'>
             <Container>
                 <ColumnLeft>
                     <h1>{heading}</h1>
                     <p>{paragraphOne}</p>
-                    <Button to="/homes" primary='true'>{buttonLabel}</Button>
+                   
                 </ColumnLeft>
                 <ColumnRight reverse={reverse}>
                     <img src={image} alt="home" />
@@ -76,6 +78,7 @@ function InfoSection({heading, paragraphOne, paragraphTwo, buttonLabel, reverse,
             </Container>
         </Section>
     )
+    // <Button to="/homes" primary='true'>{buttonLabel}</Button>
 }
 
 export default InfoSection

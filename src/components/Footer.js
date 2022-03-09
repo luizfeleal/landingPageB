@@ -13,6 +13,10 @@ const FooterContainer = styled.div`
 `
 const Content = styled.div`
     text-align: center;
+
+    p{
+        padding-bottom: 20px;
+    }
 `
 
 const Icon = styled.img`
@@ -25,6 +29,7 @@ const Footer = ({text, image}) => {
         <FooterContainer>
             <Content>
                 <p>{text}</p>
+                <p>E-mail : brunoleal1989@icloud.com</p>
                 <a href='https://www.instagram.com/brunomozi'><Icon src={image} alt="Icone do instagram"/></a>
             </Content>
         </FooterContainer>

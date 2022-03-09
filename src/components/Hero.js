@@ -160,7 +160,7 @@ const Hero = ({ slides }) => {
     }*/
     return (
         <div>
-            <HeroSection>
+            <HeroSection id='home'>
                 <HeroWrapper>
                     {SliderData.map((slide, index) => {
                         return(

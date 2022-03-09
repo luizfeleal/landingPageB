@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { SliderData } from '../data/SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+
 const Section = styled.section`
 width:; 100%;
 height: 100%;
@@ -58,14 +59,14 @@ const FestaCorpSection = ({ gallery, slides }) => {
     }, []);
 
     const [current, setCurrent] = useState(0);
-    const length = slides.length;
+    //const length = slides.length;
     return(
         <Section>
             <Container>
                 <Title>Samba do Mozi</Title>
                 <Content>
                     <BoxContent data-aos="fade-left">
-                        <Video autoPlay playsInline muted loop>
+                        <Video autoPlay playsInline >
                             <source src={gallery[0].image} type="video/mp4" alt="Storys dos shows"/>
                         </Video>
                         <Text>

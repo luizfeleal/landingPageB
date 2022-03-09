@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FriendsData } from '../data/FriendsData';
 
 const Section = styled.section`
 width:; 100%;
@@ -22,12 +21,15 @@ const Content = styled.div`
 
     @media screen and (max-width: 1124px){
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
     @media screen and (max-width: 1024px){
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
     @media screen and (max-width: 768px){
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
 
 `
@@ -61,7 +63,7 @@ const H1 = styled.h1`
 
 const FriendsSection = ({ photos }) => {
     return (
-    <Section>
+    <Section id='clientes'>
         <Container>
             <H1>Amigos e clientes</H1>
 
@@ -82,7 +84,22 @@ const FriendsSection = ({ photos }) => {
                 <BoxImage>
                     <H1>Rafael Portugal</H1>
                     <img src={photos[3].image} alt="menos e mais" />
-                    <p>"Serviço impecável e de extrema qualidade" - Rafael Portugal</p>
+                    
+                </BoxImage>
+                <BoxImage>
+                    <H1>Belo</H1>
+                    <img src={photos[4].image} alt="menos e mais" />
+                    
+                </BoxImage>
+                <BoxImage>
+                    <H1>Livia Lemos</H1>
+                    <img src={photos[5].image} alt="menos e mais" />
+                    
+                </BoxImage>
+                <BoxImage>
+                    <H1>Rodolfo Medina e Livia Medina</H1>
+                    <img src={photos[6].image} alt="menos e mais" />
+                    
                 </BoxImage>
                
             </Content>

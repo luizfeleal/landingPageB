@@ -1,9 +1,11 @@
 import React from 'react'
 import styled, {css} from 'styled-components/macro';
 import { Link } from 'react-router-dom';
+import { HashLink as Direcionador } from 'react-router-hash-link';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 import {FaBars} from 'react-icons/fa';
+import instaIcom from '../images/instagramIcon.png'
 
 const Nav = styled.nav`
     height: 60px;
@@ -25,7 +27,7 @@ const NavLink = css`
     text-decoration: none;
 `
 
-const Logo = styled(Link)`
+const Logo = styled(Direcionador)`
     ${NavLink};
 `
 
@@ -51,7 +53,7 @@ const NavMenu = styled.div`
     }
 `
 
-const NavMenuLinks = styled(Link)`
+const NavMenuLinks = styled(Direcionador)`
     ${NavLink};
     color: #fff;
 `
@@ -66,20 +68,25 @@ const NavBtn = styled.div`
     }
 `;
 
+const Icon = styled.img`
+cursor: pointer;
+`
+
 const Navbar = ({toggle}) => {
     return (
         <Nav>
-            <Logo to='/'>ELIXR</Logo>
+            <Logo smooth to='/#home'>Bruno Mozi</Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (
-                    <NavMenuLinks to={item.link} key={index}>
+                    <NavMenuLinks smooth to={item.link} key={index}>
                         {item.title}
                     </NavMenuLinks>
                 ))}
+                 <a href='https://www.instagram.com/brunomozi'><Icon src={instaIcom} alt="Icone do instagram"/></a>
             </NavMenu>
             <NavBtn>
-                <Button to="/contact" primary="true" >Conatact Us</Button>
+                <Button to="" primary="true" ><a href='https://api.whatsapp.com/send/?phone=5521964370776&text&app_absent=0'>Entre em contato</a></Button>
             </NavBtn>
         </Nav>
     );

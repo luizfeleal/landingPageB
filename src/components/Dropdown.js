@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
+import instaIcom from '../images/instagramIcon.png'
 
 const DropdownContainer = styled.div`
     position: fixed;
@@ -60,6 +61,10 @@ const DropdownLink = styled.div`
 const BtnWrap = styled.div`
 
 `
+const IconInsta = styled.img`
+cursor: pointer;
+`
+
 
 const Dropdown = ({ isOpen, toggle }) => {
     return (
@@ -74,6 +79,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                             {item.title}
                         </DropdownLink>
                     ))}
+                     <a href='https://www.instagram.com/brunomozi'><IconInsta src={instaIcom} alt="Icone do instagram"/></a>
                 </DropdownMenu>
                 <BtnWrap>
                     <Button primary="true" round="true" to="/contact">Contact us</Button>

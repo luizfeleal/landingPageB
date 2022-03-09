@@ -21,4 +21,9 @@ export const Button = styled(Link)`
     &:hover {
         transform: translateY() (-2px);
     }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
 `;
