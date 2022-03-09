@@ -26,7 +26,7 @@ function FirstPage() {
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <Hero slides={SliderData} />
       <InfoSection {...InfoData}/>
-      <StorySection {...StoryData}/>
+      <StorySection images={StoryData}/>
       <FriendsSection photos={FriendsData}/>
       <Footer {...FooterData}/>
     </>
