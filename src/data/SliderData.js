@@ -1,28 +1,28 @@
 import ImageOne from '../images/rockInRio.jpeg';
-import ImageTwo from '../images/imagemCasamento.JPG';
-import ImageThree from '../images/festaCorporativa.JPG';
+import ImageTwo from '../images/rockInRio3.jpeg';
+import ImageThree from '../images/sambaDoMozi1.JPG';
 
 export const SliderData = [
     {
         title: 'Rock in Rio Session',
         path: '/rockinrio',
-        label: 'View more',
+        label: 'Ver mais',
         image: ImageOne,
-        alt: 'Rock in Rio session show'
+        alt: 'ROCK IN RIO SESSION'
     },
     {
+        title: 'Samba do Mozi',
+        path: '/sambaDoMozi',
+        label: 'Ver mais',
+        image: ImageTwo,
+        alt: 'SAMBA DO MOZI'
+    },
+    /*{
         title: 'Casamento',
         path: '/casamento',
-        label: 'View more',
-        image: ImageTwo,
-        alt: 'casamento'
-    },
-    {
-        title: 'Festa Corporativa',
-        path: '/festaCorporativa',
-        label: 'View more',
+        label: 'Ver mais',
         image: ImageThree,
-        alt: 'Festa particular'
-    },
+        alt: 'CASAMENTO'
+    },*/
 
 ]

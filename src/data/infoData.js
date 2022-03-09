@@ -1,4 +1,4 @@
-import ImageOne from '../images/aboutImage.JPG'
+import ImageOne from '../images/perfil.jpeg'
 
 export const InfoData = {
     heading: 'O que é essa empresa ?',

@@ -1,9 +1,10 @@
-import ImageOne from '../images/pagodeNordico1.mov';
-import ImageTwo from '../images/sambaDoMozi3.mov';
-import ImageThree from '../images/sambaDoMozi2.mov';
+import ImageOne from '../images/sambaDoMozi1.JPG';
+import ImageTwo from '../images/sambaDoMozi2.JPG';
+import ImageThree from '../images/sambaDoMozi3.JPG';
 
 export const SambaDoMoziData = [
     {
+        firstTitle: 'Samba do Mozi',
         title: 'Samba do Mozi é sinônimo de casa cheia!',
         path: '../images/pagodeNordico1.mov',
         description: 'Algum texto aqui para ser adicionado, explicando sobre o evento e falando algumas coisas diferenciais!',
